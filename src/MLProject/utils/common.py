@@ -122,6 +122,10 @@ def save_json(path: Path, data: dict):
             Returns:
                 str: size in KB
             """
-            size_in_kb = round(os.path.getsize(path)/1024)
+            size_in_kb = round(os.path.get_size(path)/1024)
             return f"~ {size_in_kb} KB"
+        
+        
+        
+        
         
