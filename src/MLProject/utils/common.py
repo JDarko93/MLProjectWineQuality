@@ -84,6 +84,8 @@ def save_json(path: Path, data: dict):
         return ConfigBox(content)
     
     
+    
+    
     @ensure_annotations
     def save_bin(data: Any, path: Path):
         """save binary file
@@ -97,33 +99,33 @@ def save_json(path: Path, data: dict):
         
         
         
-        @ensure_annotations
-        def load_bin(path: Path) -> Any:
-            """load binary data
+@ensure_annotations
+def load_bin(path: Path) -> Any:
+    """load binary data
             
-            Args:
-                path (Path) path to binary file
+    Args:
+        path (Path) path to binary file
                 
-            Returns:
-                Any: object stored in the file
-            """
-            data = joblib.load(path)
-            logger.info(f"binary file loaded from: {path}")
-            return data
+    Returns:
+        Any: object stored in the file
+    """
+    data = joblib.load(path)
+    logger.info(f"binary file loaded from: {path}")
+    return data
         
         
-        @ensure_annotations
-        def get_size(path: Path) -> str:
-            """get size in KB
+@ensure_annotations
+def get_size(path: Path) -> str:
+    """get size in KB
             
-            Args:
-                path (Path): path of the file
+    Args:
+        path (Path): path of the file
                 
-            Returns:
-                str: size in KB
-            """
-            size_in_kb = round(os.path.get_size(path)/1024)
-            return f"~ {size_in_kb} KB"
+    Returns:
+        str: size in KB
+    """
+    size_in_kb = round(os.path.getsize(path)/1024)
+    return f"~ {size_in_kb} KB"
         
         
         
