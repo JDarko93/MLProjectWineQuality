@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME= "MLProjectWineQuality"
 AUTHOR_USER_NAME = "JDarko93"
-SRC_REPO = "MLProjectWineQuality"
+SRC_REPO = "MLProject"
 AUTHOR_EMAIL = "cyberdarko24@gmail.com"
 
 
