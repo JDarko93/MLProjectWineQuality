@@ -1,3 +1,2 @@
-from MLProject import logger
-
-logger.info("Welcome to MLProject")
+object import logger
+object.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
