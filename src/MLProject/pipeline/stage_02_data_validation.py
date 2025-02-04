@@ -3,7 +3,7 @@ from MLProject.components.data_validation import DataValidation
 from MLProject import logger
 
 
-STAGE_NAME = "Data Ingestion stage"
+STAGE_NAME = "Data Validation stage"
 
 class DataValidationTrainingPipeline:
     
